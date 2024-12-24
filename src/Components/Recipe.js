@@ -4,14 +4,14 @@ import { NavLink, json, useParams } from 'react-router-dom';
 const Recipe = ({detail}) => {
     const [data, setData] = useState()
     const {meal} = useParams();
-    
+    //console.log(`Meal id : ${meal}`)
   
         
        const myFun = async () =>{
         const get = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${meal}`);
         const jsonData = await get.json();
-        // console.log(jsonData.meals[0])
-         setData(jsonData.meals[0])
+        //console.log(jsonData)
+        setData(jsonData.meals[0])
        }
        
     if(meal != ""){
@@ -25,7 +25,7 @@ const Recipe = ({detail}) => {
     <>
     {!data ?  "Not Found" :  
     
-    <div className='msg'>
+    <div className='msgr'>
       
      <img src={data.strMealThumb}/>
         <div className='info'>

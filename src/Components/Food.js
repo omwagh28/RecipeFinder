@@ -20,7 +20,7 @@ const Food = () => {
         }else{
         const get = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`);
         const jsonData = await get.json();
-        console.log(jsonData.meals);
+        //console.log(jsonData.meals);
         setData(jsonData.meals)
         setMsg("Your Search Result's")
          

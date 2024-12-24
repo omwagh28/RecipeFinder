@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import Recipe from './Recipe';
 
 const Cards = ({detail}) => {
-    console.log(detail);
+    //console.log(detail);
   return (
     <div className='meals'>
         {

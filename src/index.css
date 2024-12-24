@@ -101,9 +101,54 @@ code {
 .mealInfo .info{
   margin-top: -112px;
 }
+
 .msg{
   text-align: center;
 }
+/* .msg{
+  text-align: center;
+  height: 90vh;
+  margin: auto;
+  display: flex;
+  gap: 22px;
+  justify-content:center ;
+  align-items: center;
+  background-color: rgb(255, 181, 42);
+  padding: 32px;
+  
+}
+
+.msg button{
+  border: none;
+  padding: 9px;
+  border-radius: 6px;
+  font-size: 19px;
+  background-color: orangered;
+  color: #fff;
+} */
+
+.msgr{
+  text-align: center;
+  height: 95vh;
+  margin: auto;
+  display: flex;
+  gap: 22px;
+  justify-content:center ;
+  align-items: center;
+  background-color: rgb(255, 181, 42);
+  padding: 32px;
+}
+
+.msgr button{
+  border: none;
+  padding: 9px;
+  border-radius: 6px;
+  font-size: 19px;
+  background-color: orangered;
+  color: #fff;
+}
+
 .head{
   text-align: center;
 }
+

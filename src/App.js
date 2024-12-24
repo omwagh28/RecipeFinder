@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './index.css'
 import Mainpage from './Component/Mainpage';
 import { Route,Routes } from 'react-router-dom';
 import Mealinfo from './Component/Mealinfo';
@@ -14,7 +15,7 @@ function App() {
      
      <Routes>
       <Route path='/' element={<Food/>}/>
-      <Route path='/:mealid' element={<Recipe/>}/>
+      <Route path='/:meal' element={<Recipe/>}/>
      </Routes>
       
   );
